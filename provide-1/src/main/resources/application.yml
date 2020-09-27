@@ -1,0 +1,13 @@
+server:
+  port: 8011
+  servlet:
+    context-path: /provide
+spring:
+  application:
+    name: service-provide
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+  instance:
+    prefer-ip-address: true
